@@ -59,11 +59,11 @@ for fish in lanternfish:
     
 days = 256
 for day in range(days):
-    fuckin_fish = fishionary[0]
+    dupping_fish = fishionary[0]
     for i in range(8 + 1):
         fishionary[i] = fishionary[i+1]
-    fishionary[6] += fuckin_fish
-    fishionary[8] += fuckin_fish
+    fishionary[6] += dupping_fish
+    fishionary[8] += dupping_fish
 
     # print(day + 1, fishionary)
     
