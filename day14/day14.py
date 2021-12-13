@@ -1,6 +1,6 @@
 # Roman Ramirez, rr8rk@virginia.edu
-# Advent of Code 2021, Day 13
-
+# Advent of Code 2021, Day 14:
+    
 #%% LONG INPUT
 my_input = []
 with open('input.txt', 'r') as f:
@@ -11,3 +11,5 @@ with open('input.txt', 'r') as f:
 my_input = [
     
     ]
+
+#%% PART 1 CODE
