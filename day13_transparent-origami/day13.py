@@ -3,7 +3,7 @@
 
 #%% LONG INPUT
 my_input = []
-with open('input2.txt', 'r') as f:
+with open('input_roman.txt', 'r') as f:
     for line in f:
         my_input.append(line.strip('\n'))
 
@@ -77,7 +77,7 @@ class Paper(list):
                 if any([p.equals(x, y) for p in self]):
                     accum += '#'
                 else:
-                    accum += ' '
+                    accum += '.'
             print(accum)
     
     def fold_paper(self, fold):

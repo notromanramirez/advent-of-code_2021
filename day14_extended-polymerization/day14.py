@@ -62,7 +62,7 @@ for char in polymer:
 mce = max(freq.values())
 lce = min(freq.values())
 
-print(freq)
+# print(freq)
 print(mce - lce)
 
 #%% PART 2 CODE: DON'T MAKE THE STRING BUT COUNT THE NUMBERS
@@ -106,22 +106,22 @@ elements = dict()
 
 for k, v in pairs.items():
     if k[0] not in elements.keys():
-        elements[k[0]] = v
+        elements[k[0]] = v / 2
     else:
-        elements[k[0]] += v
+        elements[k[0]] += v / 2
                  
     if k[1] not in elements.keys():
-        elements[k[1]] = v
+        elements[k[1]] = v / 2
     else:
-        elements[k[1]] += v
+        elements[k[1]] += v / 2
         
-elements[polymer[0]] += 1
-elements[polymer[-1]] += 1
+elements[polymer[0]] += 0.5
+elements[polymer[-1]] += 0.5
         
-elements = {k: int(v / 2) for k, v in elements.items()}
+elements = {k: int(v) for k, v in elements.items()}
 
 mce = max(elements.values())
 lce = min(elements.values())
 
-print(elements)
+# print(elements)
 print(mce - lce)
